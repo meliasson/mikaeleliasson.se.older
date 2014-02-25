@@ -1,3 +1,153 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$black: #000;
+$white: #fff;
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+#headerWrapper {
+  background-color: $black;
+  color: $white;
+  height: 4em;
+  line-height: 4em;
+  text-transform: uppercase;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+#headerContent {
+  margin: 0 1em;
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+header h1 {
+  float: left;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+header h1 span {
+  font-weight: 800;
+}
+
+header ul {
+  float: right;
+}
+
+#contentOuterWrapper {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+#contentInnerWrapper {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+#contentInnerWrapper .content {
+  background-color: #fdf6e3;
+  border: 2px solid;
+  margin: 2em 1em 0 1em;
+  overflow: hidden;
+  padding: 1em;
+}
+
+aside {
+  margin: 2em 1em 0 1em;
+}
+
+aside a {
+  color: #fff;
+  text-decoration: none;
+}
+
+aside > div {
+  padding: 1em;
+}
+
+aside > div:first-child {
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+aside > div > div {
+  text-transform: uppercase;
+}
+
+aside > div:last-child {
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0px 8px 6px #888888;
+  color: #fff;
+  font-weight: 800;
+}
+
+aside > div:last-child > div:last-child {
+  background: linear-gradient(to bottom, #222 45%, #222 45%, #222 50%, transparent 50%, transparent 55%, #222 55%, #222 100%);
+  color: rgba(255,255,255,.95);
+  font-size: 2.5em;
+}
+
+.content li {
+  margin-bottom: 1.5em;
+}
+
+.content li:last-child {
+  margin-bottom: 0;
+}
+
+.content li span {
+  float: right;
+}
+
+a {
+  color: #000;
+}
+
+article h2 {
+  font-size: 1.5em;
+}
+
+article h2, article p, article pre {
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: marquee 10s linear infinite;
+}
+
+.marquee:hover {
+  -webkit-animation-play-state: paused
+}
+
+/* Make it move */
+@-webkit-keyframes marquee {
+  0%   { text-indent: 15em }
+  100% { text-indent: -5em }
+}

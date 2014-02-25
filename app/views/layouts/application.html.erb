@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>HomeRails</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <div id="headerContent">
+          <h1>Mikael <span>Eliasson</span></h1>
+          <ul>
+            <li>About</li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div id="contentOuterWrapper">
+      <div id="contentInnerWrapper">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
 </html>
