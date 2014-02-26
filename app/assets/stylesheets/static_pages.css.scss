@@ -105,7 +105,8 @@ aside > div:last-child {
 aside > div:last-child > div:last-child {
   background: linear-gradient(to bottom, #222 45%, #222 45%, #222 50%, transparent 50%, transparent 55%, #222 55%, #222 100%);
   color: rgba(255,255,255,.95);
-  font-size: 2.5em;
+  font-size: 3.5em;
+  text-align: center;
 }
 
 .content li {
@@ -114,10 +115,6 @@ aside > div:last-child > div:last-child {
 
 .content li:last-child {
   margin-bottom: 0;
-}
-
-.content li span {
-  float: right;
 }
 
 a {
@@ -134,22 +131,6 @@ article h2, article p, article pre {
 
 code {
   font-family: Menlo, Monaco, Consolas, monospace;
-}
-
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-animation: marquee 10s linear infinite;
-}
-
-.marquee:hover {
-  -webkit-animation-play-state: paused
-}
-
-/* Make it move */
-@-webkit-keyframes marquee {
-  0%   { text-indent: 15em }
-  100% { text-indent: -5em }
 }
 
 @media only screen and (max-width: 560px) {
