@@ -1,0 +1,9 @@
+html, body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 32px auto;
+  width: 800px;
+}

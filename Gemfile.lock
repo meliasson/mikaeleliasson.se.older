@@ -148,15 +148,15 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  coffee-rails (~> 4.0.0)
-  jbuilder (~> 1.2)
+  coffee-rails
+  jbuilder
   jquery-rails
   pg
-  rails (= 4.0.3)
+  rails
   rails_12factor
   rspec-rails
-  sass-rails (~> 4.0.0)
+  sass-rails
   sdoc
   selenium-webdriver
   turbolinks
-  uglifier (>= 1.3.0)
+  uglifier
