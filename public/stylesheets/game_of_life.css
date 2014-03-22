@@ -1,10 +1,10 @@
-html, body, ul {
+html, body {
   margin: 0;
   padding: 0;
 }
 
 canvas {
-  background: #eee;
+  background: #a8dba8;
   display: block;
   margin: auto;
 }

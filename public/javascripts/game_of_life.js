@@ -26,6 +26,7 @@ gol.view.init = function() {
     this._canvas.height = this._canvas.width;
     this._cellSize = this._canvas.width / 30;
     this._context = canvas.getContext("2d");
+    this._context.fillStyle = "#0B486B"
     this._context.clearRect(0, 0, canvas.width, canvas.height);
 };
 
