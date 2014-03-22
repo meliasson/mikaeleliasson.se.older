@@ -2,8 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$almost-black: #222;
 $black: #000;
+$grey: #888;
 $white: #fff;
+$yellow: #fdf6e3;
 
 html {
   font-family: 'Open Sans', sans-serif;
@@ -48,11 +51,12 @@ header h1 span {
 }
 
 header ul {
+  display: none;
   float: right;
 }
 
 header a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -67,7 +71,7 @@ header a {
 }
 
 #contentInnerWrapper .content {
-  background-color: #fdf6e3;
+  background-color: $yellow;
   border: 2px solid;
   margin: 2em 1em 0 1em;
   overflow: hidden;
@@ -79,7 +83,7 @@ aside {
 }
 
 aside a {
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -100,15 +104,15 @@ aside > div > div {
 }
 
 aside > div:last-child {
-  background-color: #000;
+  background-color: $black;
   border-radius: 10px;
-  box-shadow: 0px 8px 6px #888888;
-  color: #fff;
+  box-shadow: 0px 8px 6px $grey;
+  color: $white;
   font-weight: 800;
 }
 
 aside > div:last-child > div:last-child {
-  background: linear-gradient(to bottom, #222 45%, #222 45%, #222 50%, transparent 50%, transparent 55%, #222 55%, #222 100%);
+  background: linear-gradient(to bottom, $almost-black 45%, $almost-black 45%, $almost-black 50%, transparent 50%, transparent 55%, $almost-black 55%, $almost-black 100%);
   color: rgba(255,255,255,.95);
   font-size: 3.5em;
   text-align: center;
@@ -123,7 +127,7 @@ aside > div:last-child > div:last-child {
 }
 
 a {
-  color: #000;
+  color: $black;
 }
 
 article h2 {
@@ -135,7 +139,7 @@ article h2, article p, article pre {
 }
 
 code {
-  font-family: Menlo, Monaco, Consolas, monospace;
+  font-family: Menlo, Consolas, monospace;
 }
 
 @media only screen and (max-width: 560px) {

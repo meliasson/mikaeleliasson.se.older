@@ -22,9 +22,10 @@ gol.view = {};
 
 gol.view.init = function() {
     this._canvas = document.getElementById('canvas');
-    this._cellSize = 10;
+    this._canvas.width = this._compute_canvas_size();
+    this._canvas.height = this._canvas.width;
+    this._cellSize = this._canvas.width / 30;
     this._context = canvas.getContext("2d");
-    //this._context.fillStyle = '#DDDDDD';
     this._context.clearRect(0, 0, canvas.width, canvas.height);
 };
 
@@ -49,6 +50,13 @@ gol.view.update = function(grid) {
     }
 };
 
+gol.view._compute_canvas_size = function() {
+    var width = document.body.clientWidth;
+    var height = document.body.clientHeight;
+    var size = Math.min(width, height);
+    return size - (size % 30);
+}
+
 /* model */
 
 var gol = gol || {};
@@ -57,9 +65,9 @@ gol.model = {};
 
 gol.model.init = function() {
     this.population = [];
-    for (var row = 0; row < 60; row++) {
+    for (var row = 0; row < 30; row++) {
         this.population.push([]);
-        for (var col = 0; col < 80; col++) {
+        for (var col = 0; col < 30; col++) {
             if (Math.floor(Math.random() * 5) < 4) {
                 this.population[row].push(0);
             }
