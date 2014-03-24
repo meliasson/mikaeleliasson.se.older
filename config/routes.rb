@@ -1,6 +1,7 @@
 HomeRails::Application.routes.draw do
   root 'static_pages#home'
   get '/game-of-life', to: 'static_pages#game_of_life', as: 'game_of_life'
+  get '/about', to: 'static_pages#about', as: 'about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

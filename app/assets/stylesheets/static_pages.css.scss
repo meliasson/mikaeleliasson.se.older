@@ -3,8 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $almost-black: #222;
+$almost-grey: #888;
+$almost-yellow: #b58900;
 $black: #000;
-$grey: #888;
+$grey: #657b83;
 $white: #fff;
 $yellow: #fdf6e3;
 
@@ -72,6 +74,7 @@ header a {
 
 #contentInnerWrapper .content {
   background-color: $yellow;
+  color: $grey;
   border: 2px solid;
   margin: 2em 1em 0 1em;
   overflow: hidden;
@@ -106,7 +109,7 @@ aside > div > div {
 aside > div:last-child {
   background-color: $black;
   border-radius: 10px;
-  box-shadow: 0px 8px 6px $grey;
+  box-shadow: 0px 8px 6px $almost-grey;
   color: $white;
   font-weight: 800;
 }
@@ -127,7 +130,7 @@ aside > div:last-child > div:last-child {
 }
 
 a {
-  color: $black;
+  color: $almost-yellow;
 }
 
 article h2 {
