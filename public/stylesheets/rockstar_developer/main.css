@@ -1,0 +1,156 @@
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  margin: auto;
+  max-width: 500px;
+  padding: 2em 0.5em;
+}
+
+h1 {
+  color: #ffd700;
+  font-family: 'Creepster';
+  font-size: 3em;
+  letter-spacing: -3px;
+}
+
+input {
+  -webkit-appearance: none;
+  border: 1px solid;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  font-family: Arial;
+  margin-top: 1em;
+  padding: 4px;
+  width: 100%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 100px white inset; /* get rid of chrome autofill background color */
+}
+
+#data, #tracks, #no-tracks {
+  margin-top: 1em;
+}
+
+#data li, #tracks li {
+  border: 1px solid;
+  border-radius: 4px;
+  margin-top: 1em;
+}
+
+#data li {
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+}
+
+#no-tracks {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+::-moz-placeholder {
+  font-size: 12px;
+}
+
+#content {
+  background-image: url("/images/rockstar_developer/misfits.jpg");
+  background-position: right -150px top -100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 420px auto;
+}
+
+#second-screen {
+  display: none;
+}
+
+#second-screen div {
+  font-family: Futura;
+  margin-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.futura {
+  font-family: Futura;
+  text-align: center;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  text-transform: uppercase;
+}
+
+.clickable {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.clickable:hover {
+  border-color: #fff !important;
+  color: #ffd700;
+}
+
+a.clickable {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+}
+
+.parsley-error {
+  color: #b94a48 !important;
+  background-color: #f2dede !important;
+}
+
+.parsley-error-list {
+  font-size: 12px;
+  list-style-type: none;
+}
+
+.big h1 {
+  font-size: 10em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  #content {
+    background-position: right -120px top -75px;
+    background-size: 320px auto;
+  }
+
+  section {
+    max-width: 325px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+
+  #content {
+    background-position: right -90px top -50px;
+    background-size: 220px auto;
+  }
+
+  section {
+    max-width: 280px;
+  }
+}

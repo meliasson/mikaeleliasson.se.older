@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<title>Rockstar Development</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Creepster" />
+<link rel="stylesheet" href="stylesheets/rockstar_developer/main.css"/>
+<div id="content">
+  <section id="first-screen">
+    <header class="futura">
+      Join us and become a
+      <h1>rockstar developer</h1>
+    </header>
+    <form method="post" novalidate="novalidate" data-validate="parsley">
+      <input type="text" placeholder="Full name" name="name" data-trigger="change" data-required="true" data-maxlength="25">
+      <input type="text" placeholder="E-mail address" name="email" data-trigger="change" data-required="true" data-maxlength="25" data-type="email">
+      <input type="text" placeholder="Street" name="street" data-trigger="change" data-maxlength="25">
+      <input type="text" placeholder="Postal code" name="code" data-trigger="change" data-maxlength="25">
+      <input type="text" placeholder="Town" name="town" data-maxlength="25">
+      <input type="text" placeholder="Favorite rock band" name="band" data-trigger="change" data-required="true" data-maxlength="25">
+      <input type="submit" class="clickable futura" value="Claim your fame!" name="submit">
+    </form>
+  </section>
+  <section id="second-screen">
+    <header class="futura">
+      You're close to becoming a
+      <h1>rockstar developer</h1>
+      We received
+    </header>
+    <ul id="data">
+      <li id="name"></li>
+      <li id="email"></li>
+      <li id="street"></li>
+      <li id="code"></li>
+      <li id="town"></li>
+    </ul>
+    <div class="futura">
+      We'll contact you. Meanwhile, check out Spotify's top songs by <span id="band"></span>
+    </div>
+    <ul id="tracks" class="futura">
+    </ul>
+    <div id="no-tracks">
+      Oops, Spotify couldn't find any songs :(
+    </div>
+  </section>
+</div>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="javascripts/rockstar_developer/parsley.min.js"></script>
+<script src="javascripts/rockstar_developer/main.js"></script>
+<script>
+ APP.init();
+</script>
