@@ -3,25 +3,11 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   </head>
   <body>
-    <div id="headerWrapper">
-      <header>
-        <div id="headerContent">
-          <h1>MIKAEL<span>Eliasson</span></h1>
-          <ul>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
-      </header>
-    </div>
-    <div id="contentOuterWrapper">
-      <div id="contentInnerWrapper">
-        <%= yield %>
-      </div>
-    </div>
+    <%= yield %>
   </body>
 </html>
