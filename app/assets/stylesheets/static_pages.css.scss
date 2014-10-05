@@ -3,6 +3,10 @@ html, body, h1, p {
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   background: #fdf6e3;
   color: #222;
@@ -170,6 +174,10 @@ section .content {
 /* Media queries */
 
 @media (max-width: 600px) {
+  section {
+    min-height: 200px;
+  }
+
   #hello {
     border-bottom: 2px solid #222;
   }
