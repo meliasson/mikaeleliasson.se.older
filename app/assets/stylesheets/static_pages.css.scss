@@ -169,13 +169,13 @@ section .content {
 
 /* Media queries */
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   #hello {
     border-bottom: 2px solid #222;
   }
-  
+
   #hello h1 {
-    font-size: 8rem;
+    font-size: 6rem;
      text-shadow:
      -2px -2px 0 #222,
      2px -2px 0 #222,
@@ -184,8 +184,9 @@ section .content {
   }
 
   #links a {
-    border: 3px solid;
-    font-size: 4rem;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 3rem;
     margin: 0 5px;
   }
 }
